@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded"
+    tools:context=".MainActivity"
+    android:paddingTop="30dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginHorizontal="30px"
+    >
+
+
+    <EditText
+        android:id="@+id/input_nama_depan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:lines="1"
+        android:hint="First Name"
+        android:textColorHighlight="#000"
+        android:layout_marginHorizontal="20px"
+        android:layout_marginBottom="30px"
+        />
+    <EditText
+        android:id="@+id/input_nama_belakang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:maxLines="1"
+        android:lines="1"
+        android:layout_marginHorizontal="20px"
+        android:layout_marginBottom="30px"
+        android:layout_below="@id/input_nama_depan"
+        />
+    <EditText
+        android:id="@+id/input_nim"
+        android:hint="NIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="8"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_marginHorizontal="20px"
+        android:layout_marginBottom="30px"
+        android:layout_below="@id/input_nama_belakang"
+
+        />
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_below="@id/input_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:hint="Email"
+        android:layout_marginHorizontal="20px"
+        android:layout_marginBottom="50px"
+        />
+
+    <include layout="@layout/btn_input_activity"/>
+
+</RelativeLayout>
