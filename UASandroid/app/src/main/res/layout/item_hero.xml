@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gambar_hero"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/emberspirit" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gambar_hero"
+        android:layout_toEndOf="@id/gambar_hero"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nama_hero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Tinker"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/deskripsi_hero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Hero Dota 2"/>
+    </LinearLayout>
+</RelativeLayout>
